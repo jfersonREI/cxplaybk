@@ -11,7 +11,7 @@ If something goes wrong, delete the node_modules folder and run npm install agai
 Now let’s make sure you also have Gulp installed globally:
 
 ```markdown
-`$ npm install gulp -g`
+$ npm install gulp -g
 ```
 
 ### Start server
