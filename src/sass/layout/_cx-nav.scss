@@ -1,0 +1,47 @@
+.cx-topbar {
+  background-color: $rei-primary-blue-90;
+  &--is-sticky {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.cx-navbar {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+    background-color: $rei-primary-blue-60;
+  }
+
+  &__nav {
+    background-color: transparent;
+  }
+}
+.cx-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  &__item {
+    margin: 0 1rem;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: $rei-primary-blue-10;
+    }
+  }
+}
