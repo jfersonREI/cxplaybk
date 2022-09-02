@@ -1,0 +1,29 @@
+.playbook-hero {
+  background-color: $rei-primary-blue-90;
+
+  &__intro {
+    padding: 5rem 0;
+    color: #fff;
+    h1 {
+      font-family: $font-family-headline;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 1.1em;
+    }
+    h1 + p {
+      margin-top: 1.25rem;
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 1.5em;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  &__media {
+    background-color: transparent;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
