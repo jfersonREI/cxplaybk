@@ -16,7 +16,31 @@
   }
 
   &__nav {
-    background-color: transparent;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    @include media-breakpoint-up(md) {
+      display: unset;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__toggle {
+    background-color: $rei-primary-red-90;
+    border-radius: 0;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem;
+    display: block;
+    border: 0;
+
+    @include media-breakpoint-up(md) {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 }
 .cx-nav-list {
@@ -46,7 +70,7 @@
     letter-spacing: 1px;
 
     display: block;
-    padding: 0.75rem 1rem;
+    padding: 1.25rem 1rem;
     &:hover {
       color: $rei-primary-blue-10;
     }
