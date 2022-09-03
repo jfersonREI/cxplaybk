@@ -1,8 +1,16 @@
 .cx-topbar {
   background-color: $rei-primary-blue-90;
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  @include media-breakpoint-up(md) {
+    height: 4rem;
+  }
+
   &--is-sticky {
     position: sticky;
     top: 0;
+    z-index: 1;
   }
 }
 
@@ -52,14 +60,20 @@
   }
 
   &__toggle {
-    background-color: $rei-primary-red-90;
+    background-color: transparent;
     border-radius: 0;
     color: #fff;
     text-decoration: none;
     position: relative;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     display: block;
-    border: 0;
+    border: $rei-primary-blue-50 2px solid;
+    font-family: $font-family-headline;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9125rem;
+    letter-spacing: 0.02rem;
+    line-height: 1;
 
     @include media-breakpoint-up(md) {
       display: none;
