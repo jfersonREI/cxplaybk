@@ -48,6 +48,7 @@
 
 .cx-play-card {
   background-color: #fff;
+  padding: 1.5rem;
   box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.15);
   &--card-1 {
     background-color: $rei-primary-blue-80;
@@ -63,5 +64,31 @@
   }
   &--card-5 {
     background-color: $rei-secondary-blue-80;
+  }
+
+  &__media {
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  &__headline {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    &::after {
+      content: "";
+      width: 3rem;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      bottom: -0.5rem;
+    }
+  }
+  &__subtitle {
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 700;
   }
 }
