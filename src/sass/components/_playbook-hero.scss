@@ -25,6 +25,9 @@
       font-weight: 300;
       color: rgba(255, 255, 255, 0.8);
     }
+    p > button {
+      margin-top: 1rem;
+    }
   }
   &__media {
     background-color: transparent;
