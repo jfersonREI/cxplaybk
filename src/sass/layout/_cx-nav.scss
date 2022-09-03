@@ -15,6 +15,10 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
   }
   &__logo-icon {
     background-color: $rei-primary-red-90;
@@ -74,7 +78,7 @@
     font-size: 0.9375rem;
 
     &__item {
-      margin: 0 1rem;
+      margin: 0 1.25rem;
       &:first-of-type {
         margin-left: 0;
       }
@@ -87,7 +91,8 @@
       text-decoration: none;
       text-transform: uppercase;
       font-family: $font-family-headline;
-      font-weight: 400;
+      font-size: 0.875rem;
+      font-weight: 700;
       letter-spacing: 1px;
 
       display: block;
