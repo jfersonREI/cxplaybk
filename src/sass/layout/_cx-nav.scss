@@ -59,6 +59,28 @@
     }
   }
 
+  &__mobile-nav {
+    display: block;
+    @include media-breakpoint-up(md) {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .dropdown-menu {
+      background-color: $rei-primary-blue-70;
+      border-radius: 0;
+    }
+    .dropdown-item {
+      font-family: $font-family-headline;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      &:hover {
+        background-color: $rei-primary-blue-80;
+      }
+    }
+  }
   &__toggle {
     background-color: transparent;
     border-radius: 0;
@@ -71,15 +93,9 @@
     font-family: $font-family-headline;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 0.9125rem;
+    font-size: 0.9375rem;
     letter-spacing: 0.02rem;
     line-height: 1;
-
-    @include media-breakpoint-up(md) {
-      display: none;
-      opacity: 0;
-      visibility: hidden;
-    }
   }
 
   .cx-nav-list {

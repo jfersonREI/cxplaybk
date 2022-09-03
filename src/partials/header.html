@@ -41,17 +41,23 @@
           </nav>
           <!-- /.cx-nav -->
 
-          <button
-            class="cx-navbar__toggle"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="cx-nav__toggle-icon">Menu</span>
-          </button>
+          <div class="cx-navbar__mobile-nav">
+            <button
+              class="cx-navbar__toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">The Plays</a></li>
+              <li><a class="dropdown-item" href="#">Case Studies</a></li>
+              <li><a class="dropdown-item" href="#">Resources</a></li>
+            </ul>
+          </div>
         </div>
         <!-- /.cx-navbar -->
       </div>
