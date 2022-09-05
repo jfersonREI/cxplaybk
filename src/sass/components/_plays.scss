@@ -67,8 +67,15 @@
   }
 
   &__media {
-    margin-bottom: 1.5rem;
-    display: block;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    max-width: 10rem;
   }
   &__headline {
     color: #fff;
