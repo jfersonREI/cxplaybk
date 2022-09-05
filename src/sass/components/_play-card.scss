@@ -1,22 +1,3 @@
-.cx-plays {
-  padding: 2rem 0;
-  background-color: $rei-lt-gray;
-  @include media-breakpoint-up(md) {
-    padding: 4rem 0;
-  }
-}
-.cx-play-title {
-  color: $rei-primary-blue-90;
-  font-size: 2rem;
-  font-family: $font-family-headline;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  @include media-breakpoint-up(md) {
-    font-size: 2.5rem;
-  }
-}
-///////////
-
 .cx-play-card-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);

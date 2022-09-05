@@ -13,9 +13,11 @@ $theme-colors: (
 @import "components/playbook-hero";
 @import "components/plays";
 @import "components/page-hdr";
+@import "components/play-card";
 @import "components/resource-card";
-@import "pages/case-studies";
 
+@import "pages/case-plays";
+@import "pages/case-studies";
 @import "pages/resources";
 
 body {
