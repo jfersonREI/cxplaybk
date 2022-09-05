@@ -8,11 +8,15 @@
     url(https://www.reisystems.io/wp-content/uploads/2021/06/ANALYTICS_4_shutterstock_1597219936-scaled.jpg);
   background-size: cover;
   background-position: 50%;
+  background-attachment: fixed;
   padding: 2rem 0 0 0;
   text-align: center;
 
   @include media-breakpoint-up(md) {
     padding: 4rem 0 0 0;
+  }
+  &__text {
+    display: block;
   }
   &__title {
     color: #fff;

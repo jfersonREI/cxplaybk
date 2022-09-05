@@ -6,6 +6,13 @@ $theme-colors: (
 @import "helpers/variables";
 
 @import "node_modules/bootstrap/scss/bootstrap";
+a {
+  color: #ff594b;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
 
 @import "layout/header";
 
