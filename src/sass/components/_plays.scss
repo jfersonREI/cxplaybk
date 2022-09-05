@@ -45,11 +45,23 @@
   }
 }
 ///
+.cx-play-card-link {
+  transition: transform 0.2s;
+  transform: scale(1);
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.02);
+    text-decoration: none;
+    box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.15);
+  }
+}
 
 .cx-play-card {
   background-color: #fff;
   padding: 1.5rem;
-  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.15);
+  //box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.15);
+  height: 100%;
   &--card-1 {
     background-color: $rei-primary-blue-80;
   }
