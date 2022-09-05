@@ -12,6 +12,8 @@ $theme-colors: (
 @import "components/buttons";
 @import "components/playbook-hero";
 @import "components/plays";
+@import "components/page-hdr";
+@import "components/case-studies";
 
 body {
   font-family: "Roboto", sans-serif;

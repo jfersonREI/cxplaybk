@@ -1,11 +1,11 @@
-.cx-plays {
+.cx-case-studies {
   padding: 2rem 0;
   background-color: $rei-lt-gray;
   @include media-breakpoint-up(md) {
     padding: 4rem 0;
   }
 }
-.cx-play-title {
+.cx-case-studies-title {
   color: $rei-primary-blue-90;
   font-size: 2rem;
   font-family: $font-family-headline;
@@ -16,8 +16,9 @@
   }
 }
 ///////////
-
-.cx-play-card-grid {
+///
+///
+.cx-case-studies-card-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
@@ -37,7 +38,7 @@
   }
 }
 ///
-.cx-play-card-link {
+.cx-case-studies-card-link {
   transition: transform 0.2s;
   transform: scale(1);
   text-decoration: none;
@@ -49,42 +50,33 @@
   }
 }
 
-.cx-play-card {
+.cx-case-studies-card {
   background-color: #fff;
-  padding: 1.5rem;
+  padding: 0;
   //box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.15);
   height: 100%;
-  &--card-1 {
-    background-color: $rei-primary-blue-80;
-  }
-  &--card-2 {
-    background-color: $rei-primary-red-80;
-  }
-  &--card-3 {
-    background-color: $rei-green-80;
-  }
-  &--card-4 {
-    background-color: $rei-purple-80;
-  }
-  &--card-5 {
-    background-color: $rei-secondary-blue-90;
-  }
 
   &__media {
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: cadetblue;
   }
   &__img {
     width: 100%;
     height: auto;
-    max-width: 10rem;
+  }
+  &__supporting-text {
+    padding: 1.5rem;
+    display: flex;
+    flex-flow: column;
   }
   &__headline {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.875rem;
+    color: $rei-primary-blue-90;
+    font-family: $font-family-headline;
+    font-weight: 700;
+    font-size: 1.5rem;
     position: relative;
     margin-bottom: 1.5rem;
     &::after {
