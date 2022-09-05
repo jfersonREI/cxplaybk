@@ -1,0 +1,40 @@
+.cx-play-body {
+  //4rem is the img offset
+  padding: 5rem 0 4rem 0;
+  background-color: #fff;
+  @include media-breakpoint-up(lg) {
+    padding: 8rem 0 4rem 0;
+  }
+
+  h2 {
+    color: $rei-primary-red-90;
+    font-family: $font-family-headline;
+    font-size: 1.625rem;
+    font-weight: 500;
+    margin: 1.5rem 0;
+  }
+  h3 {
+    font-family: $font-family-headline;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+  ul {
+    padding-left: 1rem;
+    li {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      font-weight: 300;
+      margin: 0.25rem 0;
+    }
+    + h2 {
+      margin-top: 3rem;
+    }
+  }
+}
