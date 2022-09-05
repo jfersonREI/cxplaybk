@@ -6,6 +6,12 @@
     padding: 8rem 0 4rem 0;
   }
 
+  &__pad {
+    @include media-breakpoint-up(lg) {
+      padding: 0 3rem 0 0;
+    }
+  }
+
   h2 {
     color: $rei-primary-red-90;
     font-family: $font-family-headline;
@@ -36,5 +42,24 @@
     + h2 {
       margin-top: 3rem;
     }
+  }
+  &__sidebar {
+    background-color: $rei-lt-gray;
+    padding: 1.5rem;
+    box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.15);
+    margin: 2rem 0 0 0;
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+    }
+  }
+  &__sidebar-title,
+  p.cx-play-body__sidebar-title,
+  h2.cx-play-body__sidebar-title {
+    color: $rei-primary-blue-90;
+    font-family: $font-family-headline;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3;
   }
 }
