@@ -1,0 +1,7 @@
+.cx-resources {
+  padding: 2rem 0;
+  background-color: $rei-lt-gray;
+  @include media-breakpoint-up(md) {
+    padding: 4rem 0;
+  }
+}
