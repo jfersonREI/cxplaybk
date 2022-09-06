@@ -1,6 +1,7 @@
 .cx-related {
   padding: 4rem 0 4rem 0;
   background-color: $rei-lt-gray;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
   @include media-breakpoint-up(lg) {
     padding: 4rem 0 4rem 0;
   }
@@ -10,5 +11,92 @@
     font-size: 3rem;
     padding: 0;
     margin: 0 0 2rem 0;
+  }
+}
+
+.cx-related-card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+  //background-color: aqua;
+
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include media-breakpoint-up(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cx-related-card-link {
+  transition: transform 0.2s;
+  transform: scale(1);
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.02);
+    text-decoration: none;
+    box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.cx-related-card {
+  background-color: #fff;
+  padding: 0;
+  height: 100%;
+
+  &__media {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    max-width: 10rem;
+  }
+  &__media {
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  &__text {
+    padding: 1.5rem;
+    display: flex;
+    flex-flow: column;
+  }
+  &__title {
+    color: $rei-primary-blue-90;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    &::after {
+      content: "";
+      width: 3rem;
+      height: 1px;
+      background-color: $rei-primary-blue-90;
+      position: absolute;
+      left: 0;
+      bottom: -0.5rem;
+    }
+  }
+  &__subtitle {
+    color: $rei-primary-blue-90;
+    font-size: 1.375rem;
+    font-weight: 700;
+    font-family: $font-family-headline;
   }
 }
