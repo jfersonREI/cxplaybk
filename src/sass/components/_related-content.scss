@@ -1,0 +1,14 @@
+.cx-related {
+  padding: 4rem 0 4rem 0;
+  background-color: $rei-lt-gray;
+  @include media-breakpoint-up(lg) {
+    padding: 4rem 0 4rem 0;
+  }
+  &__title {
+    font-family: $font-family-headline;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
+}
