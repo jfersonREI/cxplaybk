@@ -52,20 +52,12 @@
   height: 100%;
 
   &__media {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  &__img {
-    width: 100%;
-    height: auto;
-    max-width: 10rem;
-  }
-  &__media {
-    padding: 0;
-    margin: 0 0 1.5rem 0;
-  }
+
   &__img {
     display: block;
     width: 100%;
